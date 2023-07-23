@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    height: 2000px;
+}
+
+#mission-imp {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0) 93%), url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/mission-impossible-dead-reckoning--part-one-et00329481-1688284554.jpg);
+    background-size:100% 100%;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mi-image {
+    margin-left: 35px;
+    width: 18%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#mi-image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#mi-image h5 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#mi-info {
+    width: 70%;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#mi-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mi-head h1 {
+    width: 40%;
+    color: white;
+}
+
+#mi-head button {
+    width: 60%;
+    margin: 20px;
+    height: 50px;
+    background-color: #636363;
+    color: white;
+    margin-left: 40px;
+    border: none;
+}
+
+#review {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+#review button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+
+#mi-lang {
+    width: 40%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mi-lang p {
+    background-color:#e5e5e5;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+#mi-date{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+#mi-button{
+    margin-top:20px ;
+    background-color: #f84464;
+    padding: 15px;
+    width: 250px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+#mi{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-left: 70px;
+}
+#mi h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+#mi p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7a7a7a;
+    font-size: 100%;
+    line-height: 23px;
+}
+#mi hr{
+    margin-top: 40px;
+    background-color: #f5efef;
+    height: 2px;
+    border: none;
+}
+.cast{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 220px;
+}
+.cast-img{
+    /* border: 2px solid red; */
+    width: 130px;
+    height: 200px;
+}
+.cast-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.cast-img h3{
+    margin-top: 10px;
+    text-align: center;
+}
+.cast-img p{
+    text-align: center;
+}
+#Top-review{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#tags{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    height: 50px;
+}
+#tags div{
+    border: 2px solid #d7d5d5;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 20%;
+    text-align: center;
+}
+
+#rating{
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.ppl-rating{
+    border: 2px solid #d7d5d5;
+    width: 45%;
+    /* padding: 30px; */
+    padding-top:20px ;
+    padding-left:25px ;
+    padding-bottom:10px ;
+    border-radius: 10px;
+    height: 250px;
+    /* border: 2px solid red; */
+    
+}
+.ppl-name{
+    /* border: 2px solid black; */
+    width: 95%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    /* padding-bottom: 10px;
+    padding: 10px 10px 10px; */
+}
+
+.j-content{
+    display: flex;
+    justify-content: space-between;
+}
