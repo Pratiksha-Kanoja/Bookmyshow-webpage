@@ -5,63 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book My Trip</title>
+    <link rel="stylesheet" href="bookmytrip.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div style="width: 100%;">
-        <!-- body -->
-        <div style="background-color: rgba(51,53,69,255);display: flex;justify-content: space-around;">
-            <!-- part1 -->
-            <div style="display: flex;">
-                <!-- left -->
-                <div>
-                    <!-- logo -->
-                    <img style="width: 150px; height: 50px;" src="../img/bookmyshow-logo-31BC3C7354-seeklogo.com.png">
-                </div>
-                <div
-                    style="width: 500px;display: flex;border-radius: 10px;height: 35px;margin-top: 10px;margin-left: 20px;margin-bottom: 10px;background-color: white;">
-                    <!-- search bar -->
-                    <div style="margin-top:4px;margin-left: 8px;margin-bottom: 6px;">
-                        <i class="fa fa-search" style="font-size:24px"></i>
+    <div id="container">
+        <div id="top-navbar">
+            <div>
+                <div id="topnavbar-left">
+                    <!-- left -->
+                    <div>
+                        <!-- logo -->
+                        <img src="../img/bookmyshow-logo-31BC3C7354-seeklogo.com.png">
                     </div>
-                    <div style="margin-top:4px;margin-left: 8px;margin-bottom: 6px;">
-                        <input type="text" style="height: 20px;width: 400px;border: none;outline: none;font-size: 15px;"
-                            placeholder="Search for Movies,Events,Plays,Sports and Activities">
+                    <div>
+                        <!-- search bar -->
+                        <div>
+                            <i class="fa fa-search" style="font-size:24px"></i>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Search for Movies,Events,Plays,Sports and Activities">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div style="display: flex;">
-                <!-- right -->
-                <div style="margin:15px;">
-                    <!-- options -->
-                    <select name="city" style="background-color:rgba(51,53,69,255);">
-                        <option value="Select">Select</option>
-                        <option value="Mumbai">Mumbai</option>
-                    </select>
-                </div>
-                <div style="margin:15px;">
-                    <!-- button -->
-                    <button
-                        style="height: 30px; width: 70px; background-color: #f84464;; border-radius: 5px;color: white;border: none;">Sign
-                        In</button>
                 </div>
 
-                <div style="margin:15px;">
-                    <!-- nav bar -->
-                    <i class="fa fa-bars" style="font-size:24px"></i>
+                <div id="topnavbar-right">
+                    <!-- right -->
+                    <div>
+                        <!-- options -->
+                        <select name="city">
+                            <option value="Select">Select</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- button -->
+                        <button
+                            style="height: 30px; width: 70px; background-color: #f84464;; border-radius: 5px;color: white;border: none;">Sign
+                            In</button>
+                    </div>
+
+                    <div>
+                        <!-- nav bar -->
+                        <i class="fa fa-bars" style="font-size:24px;color: white;"></i>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div style="background-color: #222539;height: 40px;">
-            <div style="width: 85%;margin: auto; display: flex;justify-content: space-between;height: 40px; ">
-                <div style="width: 45%; display: flex;justify-content: space-around; color: white;">
-
+        <div id="bottom-navbar">
+            <div>
+                <div id="bottomnavbar-left">
                     <a href="#">
                         <h3 style="font-size: 14px;color: white;">Movies</h3>
                     </a>
-
                     <a href="#">
                         <h3 style="font-size: 14px;color: white;">Stream</h3>
                     </a>
@@ -81,7 +79,7 @@
                         <h3 style="font-size: 14px;color: white;">Buzz</h3>
                     </a>
                 </div>
-                <div style="display: flex;justify-content: space-around;width: 30%;">
+                <div id="bottomnavbar-right">
                     <a href="#">
                         <h3 style="font-size: 14px;color: white;">LiveYourShow</h3>
                     </a>
@@ -97,273 +95,201 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div style="width: 100%;">
-        <div style="display: flex; justify-content: space-around;background-color: rgb(234, 234, 234);">
-            <img style="border-radius: 5px;margin-top: 10px;margin-bottom: 10px;"
-                src="https://assets-in.bmscdn.com/promotions/cms/creatives/1688706106206_pawpatroldesktop.jpg">
-        </div>
-
-        <div style="background-color: white;display: flex; justify-content: space-around;">
-            <div style="width: 87%;">
-
-                <div style="display: flex;justify-content: space-between;">
-                    <h2>Recommended Movies</h2>
-                    <p style="color: red;">See All > </p>
-                </div>
-
-                <div style="display: flex;justify-content: space-between;">
-
-                    <div style="width: 18%; height: 500px;">
-                        <a href="./movie.html"><img style="width: 100%; border-radius: 10px;"
-                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTQ4LjlLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-ulffbqyunn-portrait.jpg"
-                                alt="1"></a>
-                        <h3>Mission Impossible: Dead Reckoning - Part One</h3>
-                        <p style="line-height: 0.1em;">Action/Adventure/Thriller</p>
-                    </div>
-
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS40LzEwICA5LjhLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00355365-lzflppmver-portrait.jpg"
-                            alt="2">
-                        <h3>Baipan Bhari Deva</h3>
-                        <p style="line-height: 0.1em;">Comedy/Drama</p>
-                    </div>
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny45LzEwICAyMy4zSyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00338378-flxyehczgl-portrait.jpg"
-                            alt="3">
-                        <h3>Satyaprem Ki Katha</h3>
-                        <p style="line-height: 0.1em;">Drama/Music/Romantic</p>
-                    </div>
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ni4zLzEwICAxMi4xSyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00357727-rznxsvxcjy-portrait.jpg"
-                            alt="4">
-                        <h3>Insidious:The Red Door</h3>
-                        <p style="line-height: 0.1em;">Horror/Mystery/Thriller</p>
-                    </div>
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MjE5LjRLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00347867-ysxlbmwnbz-portrait.jpg"
-                            alt="5">
-                        <h3>Oppenheimer</h3>
-                        <p style="line-height: 0.1em;">Biography/Drama/Historical</p>
-                    </div>
-                </div>
+        <div id="main-body">
+            <div id="slidebar">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1688706106206_pawpatroldesktop.jpg">
             </div>
-        </div>
 
-        <div style="display: flex;justify-content: space-around;margin-top: 40px;">
-            <img style="width: 87%;"
-                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png"
-                alt="ad">
-        </div>
-
-        <div style="display: flex;justify-content: space-around;margin-top: 30px;">
-            <div style="width: 87%;">
-                <div style="display: flex;justify-content: space-between;">
-                    <h2>The Best Of Live Events</h2>
-                    <p style="color: red;">See All > </p>
-                </div>
-                <div style="display: flex;justify-content: space-between;">
-                    <div style="width: 18%;height: 250px;">
-                        <img style="width: 100%;border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTU1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/workshop-and-more-web-collection-202211140440.png"
-                            alt="1">
+            <div id="Recommended_movie">
+                <div>
+                    <div id="reco_movie-head">
+                        <h2>Recommended Movies</h2>
+                        <p style="color: red;">See All > </p>
                     </div>
 
-                    <div style="width: 18%;height: 250px;">
-                        <img style="width: 100%;border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/kids-zone-collection-202211140440.png"
-                            alt="2">
-                    </div>
+                    <div id="reco_movie-body">
 
-                    <div style="width: 18%;height: 250px;">
-                        <img style="width: 100%;border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTg1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/comedy-shows-collection-202211140440.png"
-                            alt="3">
-                    </div>
+                        <div class="body-img">
+                            <a href="./movie.html">
+                                <img src="../img/Mission Impossible- Dead Reckoning - Part One.jpg" alt="1"></a>
+                            <h3>Mission Impossible: Dead Reckoning - Part One</h3>
+                            <p>Action/Adventure/Thriller</p>
+                        </div>
 
-                    <div style="width: 18%;height: 250px;">
-                        <img style="width: 100%;border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTAwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/music-shows-collection-202211140440.png"
-                            alt="4">
-                    </div>
-
-                    <div style="width: 18%;height: 250px;">
-                        <img style="width: 100%;border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/esports-collection-202211140440.png"
-                            alt="5">
+                        <div class="body-img">
+                            <img src="../img/Baipan Bhari deva.jpg" alt="2">
+                            <h3>Baipan Bhari Deva</h3>
+                            <p>Comedy/Drama</p>
+                        </div>
+                        <div class="body-img">
+                            <img src="../img/Satyaprem ki katha.jpg" alt="3">
+                            <h3>Satyaprem Ki Katha</h3>
+                            <p>Drama/Music/Romantic</p>
+                        </div>
+                        <div class="body-img">
+                            <img src="../img/Insidious-The Red Door.jpg" alt="4">
+                            <h3>Insidious:The Red Door</h3>
+                            <p>Horror/Mystery/Thriller</p>
+                        </div>
+                        <div class="body-img">
+                            <img src="../img/Oppenheimer.jpg" alt="5">
+                            <h3>Oppenheimer</h3>
+                            <p>Biography/Drama/Historical</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <div id="ad">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png"
+                    alt="ad">
+            </div>
 
-        </div>
+            <div id="best_live_event">
+                <div>
+                    <div id="best_live_event-head">
+                        <h2>The Best Of Live Events</h2>
+                        <p style="color: red;">See All > </p>
+                    </div>
+                    <div id="best_live_event-body">
+                        <div class="ble_body-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTU1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/workshop-and-more-web-collection-202211140440.png"
+                                alt="1">
+                        </div>
 
-        <div style="background-color:rgba(44,49,72,255);display:flex;justify-content: space-around;">
-            <div style="width: 87%;">
-                <img style="width: 100%;"
-                    src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
-                    alt="footer">
-                <div style="color: white;">
-                    <h1 style="line-height: 0em;">Premieres</h1>
-                    <p>Brand new releases every Friday</p>
-                </div>
-                <div style="display: flex;justify-content: space-between;">
-                    <div style="width: 18%;height: 450px;">
-                        <img style="width: 100%;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00363608-qyqmukgxlv-portrait.jpg"
-                            alt="1">
-                        <h3 style="color: white;">Winnie the Pooh:Blood and Honey</h3>
-                        <p style="line-height: 0em;color: white;">English</p>
-                    </div>
-                    <div style="width: 18%;height: 450px;">
-                        <img style="width: 100%;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00363044-xcvngsbjme-portrait.jpg"
-                            alt="2">
-                        <h3 style="color: white;">Wolves of War</h3>
-                        <p style="line-height: 0em;color: white;">English</p>
-                    </div>
-                    <div style="width: 18%;height: 450px;">
-                        <img style="width: 100%;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00356168-szattyrjwz-portrait.jpg"
-                            alt="3">
-                        <h3 style="color: white;">The Trick</h3>
-                        <p style="line-height: 0em;color: white;">English</p>
-                    </div>
-                    <div style="width: 18%;height: 450px;">
-                        <img style="width: 100%;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00352688-bqsmbbayrl-portrait.jpg"
-                            alt="4">
-                        <h3 style="color: white;">Joyland</h3>
-                        <p style="line-height: 0em;color: white;">Urdu</p>
-                    </div>
-                    <div style="width: 18%;height: 450px;">
-                        <img style="width: 100%;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00362982-zhbnwfdwue-portrait.jpg"
-                            alt="5">
-                        <h3 style="color: white;">The Five Devils</h3>
-                        <p style="line-height: 0em;color: white;">French</p>
+                        <div class="ble_body-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/kids-zone-collection-202211140440.png"
+                                alt="2">
+                        </div>
+
+                        <div class="ble_body-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTg1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/comedy-shows-collection-202211140440.png"
+                                alt="3">
+                        </div>
+
+                        <div class="ble_body-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTAwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/music-shows-collection-202211140440.png"
+                                alt="4">
+                        </div>
+
+                        <div class="ble_body-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/esports-collection-202211140440.png"
+                                alt="5">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div style="display: flex;justify-content: space-around;background-color: rgb(240, 237, 237);">
-            <div style="width: 87%;">
-                <div style="margin-top: 70px;">
-                    <h2>Treanding Searches Right Now</h2>
-                </div>
-                <div style="display: flex;justify-content: space-between;margin-top: 50px;">
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Oppenheimer</h4>
-                        <p style="line-height: 0em;">Movies</p>
+            <div id="Premieres">
+                <div>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
+                        alt="footer">
+                    <div>
+                        <h1>Premieres</h1>
+                        <p>Brand new releases every Friday</p>
                     </div>
 
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Barbie</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Jawan</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Hostel Hudugaru Bekagiddare</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Mission Impossible : Dead Reckoning - Part One</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-                </div>
-
-                <div
-                    style="display: flex;justify-content: space-between;margin-top: 30px;width: 80%;margin-bottom: 80px;">
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Salaar</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Maaveeran</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Insidious: The Red Door</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Baby (2023)</h4>
-                        <p style="line-height: 0em;">Movies</p>
-                    </div>
-
-                    <div style="padding: 10px;padding-right: 50px;background-color: white;">
-                        <h4 style="color: #f84464;">Maamannan</h4>
-                        <p style="line-height: 0em;">Movies</p>
+                    <div>
+                        <div class="Premieres-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00363608-qyqmukgxlv-portrait.jpg"
+                                alt="1">
+                            <h3>Winnie the Pooh:Blood and Honey</h3>
+                            <p>English</p>
+                        </div>
+                        <div class="Premieres-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00363044-xcvngsbjme-portrait.jpg"
+                                alt="2">
+                            <h3>Wolves of War</h3>
+                            <p>English</p>
+                        </div>
+                        <div class="Premieres-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00356168-szattyrjwz-portrait.jpg"
+                                alt="3">
+                            <h3>The Trick</h3>
+                            <p>English</p>
+                        </div>
+                        <div class="Premieres-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00352688-bqsmbbayrl-portrait.jpg"
+                                alt="4">
+                            <h3>Joyland</h3>
+                            <p>Urdu</p>
+                        </div>
+                        <div class="Premieres-img">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00362982-zhbnwfdwue-portrait.jpg"
+                                alt="5">
+                            <h3>The Five Devils</h3>
+                            <p>French</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div style="background-color: white;display: flex; justify-content: space-around;">
-            <div style="width: 87%;">
 
-                <div style="display: flex;justify-content: space-between;">
-                    <h2>Recommended Movies</h2>
-                    <p style="color: red;">See All > </p>
-                </div>
+            <div id="trending_searches">
+                <div>
+                    <div>
+                        <h2>Treanding Searches Right Now</h2>
+                    </div>
+                    <div>
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Oppenheimer</h4>
+                            <p>Movies</p>
+                        </div>
 
-                <div style="display: flex;justify-content: space-between;">
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Barbie</h4>
+                            <p>Movies</p>
+                        </div>
 
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTQ4LjlLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-ulffbqyunn-portrait.jpg"
-                            alt="1">
-                        <h3>Mission Impossible: Dead Reckoning - Part One</h3>
-                        <p style="line-height: 0.1em;">Action/Adventure/Thriller</p>
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Jawan</h4>
+                            <p>Movies</p>
+                        </div>
+
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Hostel Hudugaru Bekagiddare</h4>
+                            <p>Movies</p>
+                        </div>
+
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Mission Impossible : Dead Reckoning - Part One</h4>
+                            <p>Movies</p>
+                        </div>
+
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Salaar</h4>
+                            <p>Movies</p>
+                        </div>
+
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Maaveeran</h4>
+                            <p>Movies</p>
+                        </div>
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Insidious: The Red Door</h4>
+                            <p>Movies</p>
+                        </div>
+
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Baby (2023)</h4>
+                            <p>Movies</p>
+                        </div>
+
+                        <div class="trending_searches-box">
+                            <h4 style="color: #f84464;">Maamannan</h4>
+                            <p>Movies</p>
+                        </div>
                     </div>
 
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS40LzEwICA5LjhLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00355365-lzflppmver-portrait.jpg"
-                            alt="2">
-                        <h3>Baipan Bhari Deva</h3>
-                        <p style="line-height: 0.1em;">Comedy/Drama</p>
-                    </div>
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny45LzEwICAyMy4zSyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00338378-flxyehczgl-portrait.jpg"
-                            alt="3">
-                        <h3>Satyaprem Ki Katha</h3>
-                        <p style="line-height: 0.1em;">Drama/Music/Romantic</p>
-                    </div>
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ni40LzEwICA4LjRLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00357727-nxtamxtcmz-portrait.jpg"
-                            alt="4">
-                        <h3>Insidious:The Red Door</h3>
-                        <p style="line-height: 0.1em;">Horror/Mystery/Thriller</p>
-                    </div>
-                    <div style="width: 18%; height: 500px;">
-                        <img style="width: 100%; border-radius: 10px;"
-                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MjE5LjRLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00347867-ysxlbmwnbz-portrait.jpg"
-                            alt="5">
-                        <h3>Oppenheimer</h3>
-                        <p style="line-height: 0.1em;">Biography/Drama/Historical</p>
-                    </div>
+                    <!-- <div style="display: flex;justify-content: space-between;margin-top: 30px;width: 80%;margin-bottom: 80px;">
+                        
+
+                        
+                    </div> -->
                 </div>
             </div>
+
         </div>
-
-
     </div>
 
 </body>
