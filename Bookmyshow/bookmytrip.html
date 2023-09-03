@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book My Trip</title>
-    <link rel="stylesheet" href="bookmytrip.css">
+    <link rel="stylesheet" href="Signup.css">
+    <script src="bookmytrip.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bookmytrip.css">
 </head>
 
 <body>
@@ -29,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <div id="topnavbar-right">
                     <!-- right -->
                     <div>
@@ -40,12 +42,47 @@
                         </select>
                     </div>
                     <div>
-                        <!-- button -->
-                        <button
-                            style="height: 30px; width: 70px; background-color: #f84464;; border-radius: 5px;color: white;border: none;">Sign
+                        <button onclick="openForm()"
+                            style="height: 30px; width: 70px; background-color: #f84464;border-radius: 5px;color: white;border: none;">Sign
                             In</button>
                     </div>
-
+                    <div id="myForm1" style="opacity: 0.7;background-color: black;">
+                    </div>
+                    <div id="myForm">
+                        <form>
+                            <div id="top-box">
+                                <h3>Get Started</h3>
+                                <div id="closebutton">
+                                    <button type="button" onclick="closeForm()">X</button>
+                                </div>
+                            </div>
+                            <div class="social-media">
+                                <button><img
+                                        src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png"
+                                        alt="google">Continue with Google</button>
+                                <br>
+                                <button><img src="https://cdn-icons-png.flaticon.com/512/542/542638.png"
+                                        alt="Email">Continue with Email</button>
+                                <br>
+                                <button><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                                        alt="apple">Continue with Apple</button>
+                                <br>
+                            </div>
+    
+                            <p style="text-align: center;margin-bottom: 30px;margin-top: 20px;">OR</p>
+    
+                            <div class="social-media">
+                                <input type="text" id="name" placeholder="Username">
+                                <br>
+                                <input type="email" id="email" placeholder="Email">
+                                <br>
+                                <input type="password" id="password" placeholder="Password">
+                                <br>
+                                <button style="margin-bottom: 30px;background-color:gray;font-size: 18px;">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+    
                     <div>
                         <!-- nav bar -->
                         <i class="fa fa-bars" style="font-size:24px;color: white;"></i>
