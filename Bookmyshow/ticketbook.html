@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book ticket</title>
+    <link rel="stylesheet" href="ticketbook.css">
+    <script src="bookmytrip.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-navbar">
+            <div>
+                <div id="topnavbar-left">
+                    <!-- left -->
+                    <div>
+                        <!-- logo -->
+                        <img src="../img/bookmyshow-logo-31BC3C7354-seeklogo.com.png">
+                    </div>
+                    <div>
+                        <!-- search bar -->
+                        <div>
+                            <i class="fa fa-search" style="font-size:24px"></i>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Search for Movies,Events,Plays,Sports and Activities">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="topnavbar-right">
+                    <!-- right -->
+                    <div>
+                        <!-- options -->
+                        <select name="city">
+                            <option value="Select">Select</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button onclick="openForm()"
+                            style="height: 30px; width: 70px; background-color: #f84464;border-radius: 5px;color: white;border: none;">Sign
+                            In</button>
+                    </div>
+                    <div id="myForm1" style="opacity: 0.7;background-color: black;">
+                    </div>
+                    <div id="myForm">
+                        <form>
+                            <div id="top-box">
+                                <h3>Get Started</h3>
+                                <div id="closebutton">
+                                    <button type="button" onclick="closeForm()">X</button>
+                                </div>
+                            </div>
+                            <div class="social-media">
+                                <button><img
+                                        src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png"
+                                        alt="google">Continue with Google</button>
+                                <br>
+                                <button><img src="https://cdn-icons-png.flaticon.com/512/542/542638.png"
+                                        alt="Email">Continue with Email</button>
+                                <br>
+                                <button><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                                        alt="apple">Continue with Apple</button>
+                                <br>
+                            </div>
+
+                            <p style="text-align: center;margin-bottom: 30px;margin-top: 20px;">OR</p>
+
+                            <div class="social-media">
+                                <input type="text" id="name" placeholder="Username">
+                                <br>
+                                <input type="email" id="email" placeholder="Email">
+                                <br>
+                                <input type="password" id="password" placeholder="Password">
+                                <br>
+                                <button style="margin-bottom: 30px;background-color:gray;font-size: 18px;"
+                                    type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <!-- nav bar -->
+                        <i class="fa fa-bars" style="font-size:24px;color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom-navbar">
+            <div>
+                <div id="bottomnavbar-left">
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Movies</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Stream</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Events</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Plays</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Sports</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Activities</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Buzz</h3>
+                    </a>
+                </div>
+                <div id="bottomnavbar-right">
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">LiveYourShow</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Corporates</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Offers</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Gift Cards</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-body">
+            <div id="movie-title">
+                <p>Mission Impossible - English</p>
+                <div>
+                    <p>UA</p>
+                    <p>ACTION</p>
+                    <p>THRILLER</p>
+                </div>
+            </div>
+            <div style="background-color: white;position: sticky;top: 0px;left: 0;">
+                <div id="dates">
+                    <div id="dates-left">
+                        <button style="background-color: #f84464;color: white;">
+                            <p>FRI</p>
+                            <p style="font-size: 18px;">08</p>
+                            <p>SEP</p>
+                        </button>
+                        <button>
+                            <p>SAT</p>
+                            <p style="font-size: 18px;">09</p>
+                            <p>SEP</p>
+                        </button>
+                        <button>
+                            <p>SUN</p>
+                            <p style="font-size: 18px;">10</p>
+                            <p>SEP</p>
+                        </button>
+                        <button>
+                            <p>MON</p>
+                            <p style="font-size: 18px;">11</p>
+                            <p>SEP</p>
+                        </button>
+                        <button>
+                            <p>TUE</p>
+                            <p style="font-size: 18px;">12</p>
+                            <p>SEP</p>
+                        </button>
+                    </div>
+                    <div id="dates-right">
+                        <div style="color: black;border-bottom: 5px solid #f84464;font-size: 17px;">
+                            <p>Hindi-2D</p>
+                            <i class='fa fa-angle-down' style='font-size:24px'></i>
+                        </div>
+                        <div>
+                            <p>Filter Sub Regions</p>
+                            <i class='fa fa-angle-down' style='font-size:24px'></i>
+                        </div>
+                        <div>
+                            <p>Filter Price Range</p>
+                            <i class='fa fa-angle-down' style='font-size:24px'></i>
+                        </div>
+                        <div>
+                            <p>Filter Show Timings</p>
+                            <i class='fa fa-angle-down' style='font-size:24px'></i>
+                        </div>
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="ticket-info">
+                <div>
+                    <div id="indicator">
+                        <div>
+                            <div id="available">
+                                <div></div>
+                                <p>AVAILABLE</p>
+                            </div>
+                            <div id="fast-filling">
+                                <div></div>
+                                <p>FAST FILLING</p>
+                            </div>
+                            <div id="lang">
+                                <div>LAN</div>
+                                <p>SUBTITLES LANGUAGE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1st -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>Ajanta Cinema Cinex: Borivali (W) Newly Renovated</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Cancellation Available</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>Cinepolis: Fun Republic Mall, Andheri (W)</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>G7 Multiplex: Bandra (W)</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4th -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>Gold Cinema: Malad Malvani</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5th -->
+
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>Gold Cinema: Santacruz (W)</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6th -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>Gold Cinema: Sona Borivali (E)</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7th -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>INOX: Megaplex, Inorbit Mall, Malad</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8th -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>INOX: Thakur Mall, Dahisar</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9th -->
+                    <div class="theatre">
+                        <div>
+                            <div class="theatre-info">
+                                <i class="fa fa-heart-o"></i>
+                                <p>INOX: Thakur Movie, Kandivali (E)</p>
+                                <div>
+                                    <p>i</p>
+                                    <p>INFO</p>
+                                </div>
+                            </div>
+                            <div class="theatre-icon">
+                                <div class="m-ticket">
+                                    <i class="fa fa-mobile-phone" style="font-size:30px"></i>
+                                    <p>M-Ticket</p>
+                                </div>
+                                <div class="food">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109748.png" alt="">
+                                    <p>Food & Beverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="theatre-time">
+                                <div>
+                                    <p>09.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>12.15 PM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>03.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>07.00 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                                <div>
+                                    <p>10.30 AM</p>
+                                    <p>Dolby</p>
+                                </div>
+                            </div>
+                            <div class="cancellation">
+                                <div>
+
+                                </div>
+                                <p>Non-cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
