@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="myprofile.css">
+    <script src="bookmytrip.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-navbar">
+            <div>
+                <div id="topnavbar-left">
+                    <!-- left -->
+                    <div>
+                        <!-- logo -->
+                        <img src="../img/bookmyshow-logo-31BC3C7354-seeklogo.com.png">
+                    </div>
+                    <div>
+                        <!-- search bar -->
+                        <div>
+                            <i class="fa fa-search" style="font-size:24px"></i>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Search for Movies,Events,Plays,Sports and Activities">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="topnavbar-right">
+                    <!-- right -->
+                    <div>
+                        <!-- options -->
+                        <select name="city">
+                            <option value="Select">Select</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button onclick="openForm()"
+                            style="height: 30px; width: 70px; background-color: #f84464;border-radius: 5px;color: white;border: none;">Sign
+                            In</button>
+                    </div>
+                    <div id="myForm1" style="opacity: 0.7;background-color: black;">
+                    </div>
+                    <div id="myForm">
+                        <form>
+                            <div id="top-box">
+                                <h3>Get Started</h3>
+                                <div id="closebutton">
+                                    <button type="button" onclick="closeForm()">X</button>
+                                </div>
+                            </div>
+                            <div class="social-media">
+                                <button><img
+                                        src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png"
+                                        alt="google">Continue with Google</button>
+                                <br>
+                                <button><img src="https://cdn-icons-png.flaticon.com/512/542/542638.png"
+                                        alt="Email">Continue with Email</button>
+                                <br>
+                                <button><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                                        alt="apple">Continue with Apple</button>
+                                <br>
+                            </div>
+
+                            <p style="text-align: center;margin-bottom: 30px;margin-top: 20px;">OR</p>
+
+                            <div class="social-media">
+                                <input type="text" id="name" placeholder="Username">
+                                <br>
+                                <input type="email" id="email" placeholder="Email">
+                                <br>
+                                <input type="password" id="password" placeholder="Password">
+                                <br>
+                                <button style="margin-bottom: 30px;background-color:gray;font-size: 18px;"
+                                    type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <!-- nav bar -->
+                        <i class="fa fa-bars" style="font-size:24px;color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom-navbar">
+            <div>
+                <div id="bottomnavbar-left">
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Movies</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Stream</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Events</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Plays</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Sports</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Activities</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Buzz</h3>
+                    </a>
+                </div>
+                <div id="bottomnavbar-right">
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">LiveYourShow</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Corporates</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Offers</h3>
+                    </a>
+                    <a href="#">
+                        <h3 style="font-size: 14px;color: white;">Gift Cards</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="nav-bar3">
+            <div>
+                <a href="#">Your Orders</a>
+                <a href="#">Stream Library</a>
+                <a href="#">QuickPay</a>
+                <a href="#">Rewards</a>
+                <a href="#">Restaurant Discounts</a>
+                <a href="#">Discount Store</a>
+                <a href="#">Profile</a>
+                <a href="#">Saved Devices</a>
+            </div>
+        </div>
+
+        <div id="main-body">
+            <div id="my-profile">
+                <div id="account-details">
+                    <div>
+                        <div>
+                            <p>+ Add</p>
+                        </div>
+                        <p>Hi, Guest</p>
+                    </div>
+                    <div>
+                        <h2>Account Details</h2>
+                        <div id="email">
+                            <p>Email Address</p>
+                            <div>
+                                <p>pratiksha.21910137@viit.ac.in</p>
+                                <div>Verified</div>
+                            </div>
+                            <div>
+                                <i class="fa fa-pencil" style="font-size:14px;"></i>
+                                <p>Edit</p>
+                            </div>
+                        </div>
+                        <div id="mobile-number">
+                            <p>Mobile Number</p>
+                            <div>
+                                <p style="color: #df4150;">+ Add Mobile Number</p>
+                                <p>Get a copy of the tickets on Whatsapp/SMS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="personal-details">
+                    <h2>Personal Details</h2>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" placeholder=" Enter first name here">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" placeholder=" Enter last name here">
+                    </div>
+                    <div>
+                        <label for="birthday">Birthday (Optional)</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label for="identity">Identity (Optional)</label>
+                        <span>Woman</span>
+                        <span>Man</span>
+                    </div>
+                    <div>
+                        <label for="marride">Married? (Optional)</label>
+                        <span>Yes</span>
+                        <span>No</span>
+                    </div>
+                </div>
+                <div id="address">
+                    <h2>Address Details (Optional)</h2>
+                    <div>
+                        <label for="area-pin">Area Pincode</label>
+                        <input type="text" placeholder=" E.g.560001">
+                    </div>
+                    <div>
+                        <label for="line1">Address Line 1</label>
+                        <input type="text" placeholder=" Flat no., House no., Building,">
+                    </div>
+                    <div>
+                        <label for="line2">Address Line 2</label>
+                        <input type="text" placeholder=" Area, Colony, Street, Sector, Village">
+                    </div>
+                    <div>
+                        <label for="landmark">Landmark</label>
+                        <input type="text" placeholder=" E.g. Prithvi Theater" >
+                    </div>
+                    <div>
+                        <label for="city">Town/City</label>
+                        <input type="text" placeholder=" E.g.Mumbai">
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" placeholder=" E.g. Maharashtra">
+                    </div>
+                </div>
+            </div>
+            <p>I agree to Terms & Conditions and Privacy policy</p>
+        </div>
+        <div id="save-button">
+            <div>
+                <button>Save Changes</button>
+            </div>
+            
+        </div>
+       
+    </div>
+</body>
+
+</html>
